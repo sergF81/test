@@ -33,11 +33,7 @@ public abstract class Firm {
             this.zp = zp + zp * 0.10;
         }
 
-        public double getZP() {
-
-            return zp;
         }
-    }
     public static class ManagerMid extends ManagerJun {
 
         @Override
@@ -45,10 +41,7 @@ public abstract class Firm {
             this.zp = zp + zp * 0.20;
         }
 
-        public double getZP() {
 
-            return zp;
-        }
     }
 
     public static class ManagerSin extends ManagerMid {
@@ -75,10 +68,7 @@ public abstract class Firm {
         }
 
 
-        public double getZP() {
 
-            return zp;
-        }
     }
 
     public static class DevJun extends Firm {
@@ -88,10 +78,7 @@ public abstract class Firm {
             this.zp = zp + zp * 0.10;
         }
 
-        public double getZP() {
 
-            return zp;
-        }
     }
 
     public static class DevMid extends DevJun {
@@ -101,10 +88,7 @@ public abstract class Firm {
             this.zp = zp + zp * 0.20;
         }
 
-        public double getZP() {
 
-            return zp;
-        }
     }
 
     public static class DevrSin extends DevMid {
@@ -128,13 +112,7 @@ public abstract class Firm {
             }
         }
 
-        public double getZP() {
-
-            return zp;
-        }
-
-
-    }
+      }
 
 
     public static void main(String[] args) throws IOException {
